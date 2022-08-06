@@ -17,7 +17,7 @@ cask "xlink-kai" do
   livecheck do
     url "https://github.com/Team-XLink/releases/releases/latest"
     strategy :page_match do |page|
-      match = page.match(%r{href=.*?/XLinkKai-(\d+(?:\.\d+)*)-(\d+)-macOS\.dmg}i)
+      match = page.match(%r{href=.*?/XLinkKai-(\d+(?:\.\d+)*)-(\d+)-macOS_x86_64\.dmg}i)
       "#{match[1]},#{match[2]}"
     end
   end
